@@ -4,6 +4,55 @@
 //= vendors/bootstrap.min.js
 
 
+
+
+$('.room-1-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.room-1-slider-sub'
+});
+$('.room-1-slider-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.room-1-slider',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
+$('.room-2-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.room-2-slider-sub'
+});
+$('.room-2-slider-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.room-2-slider',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+$('.room-3-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.room-3-slider-sub'
+});
+$('.room-3-slider-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.room-3-slider',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
 $(document).ready(function() {
 
 // Hide Header on on scroll down
@@ -234,3 +283,17 @@ menu.addEventListener( "click", function(){
 
 
 
+
+$('.our-video-container__width-1630__width-1420__video-slider').slick({
+    autoplay: true,
+    arrows: false,
+    fade: true
+});
+
+$('.our-video-container__width-1630__width-1420__interior-arrows__left-arrow-interior').click(function(){
+    $('.our-video-container__width-1630__width-1420__video-slider').slick('slickPrev');
+});
+
+$('.our-video-container__width-1630__width-1420__interior-arrows__right-arrow-interior').click(function(){
+    $('.our-video-container__width-1630__width-1420__video-slider').slick('slickNext');
+});
