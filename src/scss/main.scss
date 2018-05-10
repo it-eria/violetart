@@ -2146,6 +2146,7 @@ p {
         width: 100%;
         &__item {
           width: 100%;
+          outline: none;
           img {
             width: 100%;
             object-fit: cover;
@@ -2183,6 +2184,238 @@ p {
     }
   }
 }
+
+
+.rental-container {
+  margin-top: 17%;
+  position: relative;
+  &__width-1630 {
+    width: 100%;
+    max-width: 1630px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    &__width-1420 {
+      width: 100%;
+      max-width: 1420px;
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      &__wrap-with-sidebar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        &__sidebar {
+          padding: 10px;
+          width: 180px;
+        }
+
+        &__content {
+          flex: 1;
+          width: 100%;
+          padding: 10px;
+          max-width: 1180px;
+          position: relative;
+
+          display: block;
+          &__width-1000 {
+            width: 100%;
+            max-width: 1180px;
+            position: relative;
+            display: block;
+            &__center-bg {
+              width: 100%;
+              height: 430px;
+              position: absolute;
+              top: 0;
+              z-index: -1;
+
+            }
+
+            &__clothes-content {
+              position: relative;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              width: 100%;
+              margin: 0 auto;
+              max-width: 1440px;
+              h2 {
+                width: 100%;
+                text-align: left;
+                font-size: 40px;
+                margin-top: -22px;
+                font-family: 'MuseoSansBold';
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                margin-bottom: 40px;
+              }
+              .space-between {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+              }
+
+              &__clothes-items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                &__item-rental {
+                  width: 100%;
+                  max-width: 270px;
+                  margin: 8px;
+                  img {
+                    width: 100%;
+                  }
+                  &__clothes-info {
+                    background-color: #ebf1f1;
+                    padding: 15px;
+                    width: 100%;
+                    border-bottom: 3px solid #ccc;
+                    h3 {
+                      margin: 0;
+                      font-size: 16px;
+                    }
+
+                    .more-btn-slide {
+                      .more-info-btn {
+                        background-color: #8892c3;
+                        padding: 0;
+                        max-width: 150px;
+                        text-align: center;
+                        display: block;
+                        height: 0;
+                        opacity: 0;
+                        -webkit-transition: all .2s ease-in-out;
+                        transition: all .2s ease-in-out;
+                        margin: 0 auto;
+                        font-size: 16px;
+                        position: relative;
+                        color: #fff;
+                      }
+                    }
+
+                    p {
+                      font-size: 16px;
+                      strong {
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental:hover .more-info-btn {
+  padding: 10px 20px;
+  margin: 35px auto 0;
+  opacity: 1;
+  height: auto;
+
+}
+
+.rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental {
+  outline: 0;
+  min-height: 870px;
+  padding: 0px;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+}
+
+.mtop-170 {
+  margin-top: 170px;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  margin:0 auto;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.custom-select label {
+  margin-bottom: 0;
+  font-weight: 600;
+  padding: 5px 7px;
+}
+.select-selected {
+  background-color: #fff;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #000;
+  padding: 0 5px;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  border: 1px solid transparent;
+  border-color: transparent transparent #ccc transparent;
+  cursor: pointer;
+}
+
+.custom-select:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.select-items div {
+  border: none;
+
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover {
+  background-color: #f1f1f1;
+}
+
 
 
 
