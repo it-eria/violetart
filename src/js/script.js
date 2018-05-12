@@ -5,6 +5,26 @@
 
 
 
+$('.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-parent'
+});
+$('.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-parent').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main',
+    dots: false,
+    vertical: true,
+    focusOnSelect: true,
+    verticalSwiping: true,
+    arrows: false,
+    autoplay: true
+
+});
+
 
 $('.room-1-slider').slick({
     slidesToShow: 1,
