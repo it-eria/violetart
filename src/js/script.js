@@ -5,6 +5,33 @@
 
 
 
+$('.photosession-slider-1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    speed: 1000,
+    autoplay: true
+});
+
+$('.photosession-slider-2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    speed: 1000,
+    autoplay: true
+});
+
+$('.photosession-slider-3').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    speed: 1000,
+    autoplay: true
+});
+
 $('.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -37,6 +64,22 @@ $('.room-1-slider-sub').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.room-1-slider',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
+$('.slider-interior-1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-interior-1-sub'
+});
+$('.slider-interior-1-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-interior-1',
     dots: false,
     autoplay: true,
     focusOnSelect: true
@@ -226,6 +269,38 @@ $('.blog-container__width-1630__blog-content__blog-slider').slick({
 
     ]
 
+});
+
+$('.slider-interior-1-left-arrow').click(function(){
+    $('.slider-interior-1').slick('slickPrev');
+});
+
+$('.slider-interior-1-right-arrow').click(function(){
+    $('.slider-interior-1').slick('slickNext');
+});
+
+$('.photosession-arrow-left-3').click(function(){
+    $('.photosession-slider-3').slick('slickPrev');
+});
+
+$('.photosession-arrow-right-3').click(function(){
+    $('.photosession-slider-3').slick('slickNext');
+});
+
+$('.photosession-arrow-left-2').click(function(){
+    $('.photosession-slider-2').slick('slickPrev');
+});
+
+$('.photosession-arrow-right-2').click(function(){
+    $('.photosession-slider-2').slick('slickNext');
+});
+
+$('.photosession-arrow-left-1').click(function(){
+    $('.photosession-slider-1').slick('slickPrev');
+});
+
+$('.photosession-arrow-right-1').click(function(){
+    $('.photosession-slider-1').slick('slickNext');
 });
 
 $('.left-arrow-header').click(function(){
@@ -423,3 +498,15 @@ function setupDropdowns() {
 
 
 setupDropdowns();
+
+
+
+$(document).ready(function(){
+    $('.blog-single-slider').slick({
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000
+});
+});
