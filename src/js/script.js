@@ -32,6 +32,8 @@ $('.photosession-slider-3').slick({
     autoplay: true
 });
 
+
+
 $('.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -51,6 +53,89 @@ $('.single-interior-container__width-1420__product-wrapp__slider-interior-left__
     autoplay: true
 
 });
+
+
+
+
+
+
+
+
+
+$('.tematic-slider-1-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.tematic-slider-1-sub'
+});
+$('.tematic-slider-1-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.tematic-slider-1-main',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
+
+$('.tematic-slider-2-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.tematic-slider-2-sub'
+});
+$('.tematic-slider-2-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.tematic-slider-2-main',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
+
+
+$('.tematic-slider-3-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.tematic-slider-3-sub'
+});
+$('.tematic-slider-3-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.tematic-slider-3-main',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
+
+
+$('.tematic-slider-4-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.tematic-slider-4-sub'
+});
+$('.tematic-slider-4-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.tematic-slider-4-main',
+    dots: false,
+    autoplay: true,
+    focusOnSelect: true
+});
+
+
+
+
+
+
 
 
 $('.room-1-slider').slick({
@@ -269,6 +354,15 @@ $('.blog-container__width-1630__blog-content__blog-slider').slick({
 
     ]
 
+});
+
+
+$('.tematic-left-1').click(function(){
+    $('.tematic-slider-1-main').slick('slickPrev');
+});
+
+$('.tematic-right-1').click(function(){
+    $('.tematic-slider-1-main').slick('slickNext');
 });
 
 $('.slider-interior-1-left-arrow').click(function(){

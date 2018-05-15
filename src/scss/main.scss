@@ -3219,6 +3219,198 @@ p {
   margin-top: 160px;
 }
 
+.tematic-photosession-container {
+  margin-top: 17%;
+  .tematic-wrapper {
+    position: relative;
+    margin-top: 100px;
+    &__left-bg {
+      width: 60px;
+      height: 430px;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+    }
+
+    &__right-bg {
+      width: 60px;
+      height: 430px;
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+    }
+
+    &__width-1630 {
+      width: 100%;
+      max-width: 1630px;
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      &__center-bg {
+        width: 100%;
+        height: 430px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+      }
+
+      &__width-1420 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+
+        margin: 0 auto;
+        max-width: 1440px;
+
+        &__photosession-arrows {
+          margin-top: 15px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-right: 3%;
+          .left-arrow-photosession {
+            margin: 0 10px 0 0;
+            cursor: pointer;
+          }
+
+          .right-arrow-photosession {
+            cursor: pointer;
+            margin: 0 0 0 10px;
+          }
+        }
+        h2 {
+          width: 100%;
+          text-align: left;
+          font-size: 40px;
+          font-family: "MuseoSansBold";
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          margin-bottom: 40px;
+          margin-top: -23px;
+        }
+
+        &__content {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          background-color: #f7f7f7;
+          &__tematic-main {
+            height: 492px;
+            overflow: hidden;
+            .slick-slide {
+              outline: none;
+              img {
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+
+          &__descr-info {
+            padding: 40px;
+
+            h3 {
+              font-size: 30px;
+              font-weight: 700;
+              font-family: 'MuseoSansBold';
+              margin-top: 0;
+            }
+
+            p {
+              font-size: 16px;
+              font-family: "MuseoSansRegular";
+            }
+
+            .price-container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              margin-top: 30px;
+              p {
+                font-size: 16px;
+                strong {
+                  color: #8892c3;
+                }
+              }
+
+              .more-info-interior {
+                width: 225px;
+                a {
+                  background-color: #8892c3;
+                  padding: 10px 25px;
+                  font-size: 16px;
+                  font-weight: 100;
+                  width: 100%;
+                  display: block;
+                  color: #fff;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+
+        &__tematic-sub-slider {
+          background-color: #f7f7f7;
+          width: 100%;
+          .slick-slide {
+            width: 100%;
+            outline: none;
+            max-width: 340px;
+            height: 205px;
+            margin: 20px 10px;
+
+            img {
+              width: 100%;
+              object-fit: contain;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.padd-top-65 {
+  padding-top: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "parts/amedia";
 
 
