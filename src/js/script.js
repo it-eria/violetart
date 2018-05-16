@@ -604,3 +604,105 @@ $(document).ready(function(){
         autoplaySpeed: 4000
 });
 });
+
+
+
+(function() {
+
+    window.inputNumber = function(el) {
+
+        var min = el.attr('min') || false;
+        var max = el.attr('max') || false;
+
+        var els = {};
+
+        els.dec = el.prev();
+        els.inc = el.next();
+
+        el.each(function() {
+            init($(this));
+        });
+
+        function init(el) {
+
+            els.dec.on('click', decrement);
+            els.inc.on('click', increment);
+
+            function decrement() {
+                var value = el[0].value;
+                value--;
+                if(!min || value >= min) {
+                    el[0].value = value;
+                }
+            }
+
+            function increment() {
+                var value = el[0].value;
+                value++;
+                if(!max || value <= max) {
+                    el[0].value = value++;
+                }
+            }
+        }
+    }
+})();
+
+inputNumber($('.input-number'));
+
+
+
+(function() {
+
+    window.inputNumber2 = function(el) {
+
+        var min = el.attr('min') || false;
+        var max = el.attr('max') || false;
+
+        var els = {};
+
+        els.dec = el.prev();
+        els.inc = el.next();
+
+        el.each(function() {
+            init2($(this));
+        });
+
+        function init2(el) {
+
+            els.dec.on('click', decrement2);
+            els.inc.on('click', increment2);
+
+            function decrement2() {
+                var value = el[0].value;
+                value--;
+                if(!min || value >= min) {
+                    el[0].value = value;
+                }
+            }
+
+            function increment2() {
+                var value = el[0].value;
+                value++;
+                if(!max || value <= max) {
+                    el[0].value = value++;
+                }
+            }
+        }
+    }
+})();
+
+inputNumber2($('.input-number2'));
+
+$(function(){
+    $(".register").on("click", function(){
+        $('#exampleModal-2').modal('hide');
+
+    });
+});
+
+$(function(){
+    $(".signin").on("click", function(){
+
+        $('#exampleModal-3').modal('hide');
+    });
+});

@@ -10,7 +10,182 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
+<div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="exampleModal-1Label"
+     aria-hidden="true">
+    <div class="modal-wrapp">
 
+        <div class="modal-dialog" role="document">
+            <div style="display: flex; justify-content: space-between">
+            <div class="booking-modal-img">
+                <img src="assets/images/booking-img.jpg" alt="img"/>
+            </div>
+
+            <div class="modal-content">
+                <button class="back-btn" type="button" data-dismiss="modal"><i class="fa fa-angle-left "
+                                                              aria-hidden="true"></i> Назад
+                </button>
+
+                <h2>Замовте фотосесію</h2>
+                <form class="form-style-want">
+                    <input type="text" placeholder="Ім'я"/>
+                    <input type="text" placeholder="Прізвище"/>
+                    <input type="text" placeholder="Телефон"/>
+                    <input type="email" placeholder="Email"/>
+                    <select>
+                        <option>Вид фотосесії</option>
+                        <option>Вид фотосесії</option>
+                        <option>Вид фотосесії</option>
+                        <option>Вид фотосесії</option>
+                    </select>
+                    <div class="with-label">
+                        <label for="date">Оберіть дату</label>
+                        <input id="date" type="date"/>
+                    </div>
+                    <div class="with-label">
+                        <label for="hours">К-сть годин</label>
+                        <span id="hours" class="input-number-decrement">–</span><input class="input-number" type="text"
+                                                                                       value="1"
+                                                                                       min="0" max="10"><span
+                            class="input-number-increment">+</span>
+                    </div>
+
+                    <div class="with-label">
+                        <label for="peoples">К-сть людей</label>
+                        <span id="peoples" class="input-number-decrement">–</span><input class="input-number2" type="text"
+                                                                                         value="1"
+                                                                                         min="0" max="10"><span
+                            class="input-number-increment">+</span>
+                    </div>
+
+                    <select>
+                        <option>Додаткова послуга</option>
+                        <option>Додаткова послуга</option>
+                        <option>Додаткова послуга</option>
+                    </select>
+
+                    <p>Загальна сума: <strong>1200грн</strong></p>
+                </form>
+                <button type="submit">Забронювати</button>
+                <div>
+                    <p>Або дзвоніть нам +38(032) 261 03 20</p>
+
+                </div>
+
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                           aria-expanded="true" aria-controls="collapseOne">
+                            Ознайомитись з правилами
+                        </a>
+                    </h4>
+                </div>
+
+
+            </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <p>1. Ці Правила визначають механізм здійснення реєстрації/зняття з реєстрації місця
+                        проживання/перебування осіб в Україні, а також встановлюють форми необхідних для цього
+                        документів.</p>
+
+                    <p>2. У цих Правилах терміни вживаються у значенні, наведеному у Законі України “Про свободу
+                        пересування та вільний вибір місця проживання в Україні”.</p>
+
+                    <p>3. Реєстрація/зняття з реєстрації місця проживання/перебування здійснюється виконавчим органом
+                        сільської, селищної або міської ради, сільським головою (у разі коли відповідно до закону
+                        виконавчий орган сільської ради не утворено) (далі - орган реєстрації) на території відповідної
+                        адміністративно-територіальної одиниці, на яку поширюються повноваження відповідної сільської,
+                        селищної або міської ради.</p>
+
+                    <p>4. Громадянин України, а також іноземець чи особа без громадянства, які постійно або тимчасово
+                        проживають в Україні, зобов’язані протягом 30 календарних днів після зняття з реєстрації місця
+                        проживання та прибуття до нового місця проживання зареєструвати своє місце проживання.</p>
+
+                    <p>Реєстрація місця проживання/перебування або зняття з реєстрації місця проживання особи
+                        здійснюється в день подання особою або її представником документів. Реєстрація місця проживання
+                        за заявою особи може бути здійснена одночасно із зняттям з попереднього місця проживання.</p>
+
+                    <p>5. Батьки або інші законні представники зобов’язані зареєструвати місце проживання новонародженої
+                        дитини протягом трьох місяців з дня державної реєстрації її народження.</p>
+                    <form class="form-wrapper text-right">
+                        <label for="cool1" class="label-text">З правилами ознайомлений</label>
+                        <input required type="checkbox" name="cool-checkboxes" id="cool1" value="1">
+                        <label class="label-text" for="cool1"></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModal-1Label"
+     aria-hidden="true">
+    <div class="modal-wrapp">
+        <div class="left-modal-bg"></div>
+        <div class="right-modal-bg"></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="header-modal-links">
+                    <a class="register" role="button" data-toggle="modal" data-target="#exampleModal-3">Зареєструватись</a>
+                    <a class="signin active" role="button" data-toggle="modal" data-target="#exampleModal-2">Увійти</a>
+                </div>
+
+                <form class="form-style-want">
+                    <input type="text" placeholder="Телефон або Email"/>
+                    <input type="password" placeholder="Пароль"/>
+
+                </form>
+                <div>
+                    <a href="#">Забули пароль?</a>
+                    <button>Увійти</button>
+                </div>
+
+                <p>Або через інші мережі</p>
+                <div class="social-login-modal">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModal-1Label"
+     aria-hidden="true">
+    <div class="modal-wrapp">
+        <div class="left-modal-bg"></div>
+        <div class="right-modal-bg"></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="header-modal-links">
+                    <a class="register active" role="button" data-toggle="modal" data-target="#exampleModal-3">Зареєструватись</a>
+                    <a class="signin" role="button" data-toggle="modal" data-target="#exampleModal-2">Увійти</a>
+                </div>
+
+                <form class="form-style-want">
+                    <input type="text" placeholder="Телефон або Email"/>
+                    <input type="text" placeholder="Прізвище"/>
+                    <input type="tel" placeholder="Телефон"/>
+                    <input type="email" placeholder="Email"/>
+                    <input type="password" placeholder="Пароль"/>
+                </form>
+                <div>
+                    <button>Зареєструватись</button>
+                </div>
+
+                <p>Або через інші мережі</p>
+                <div class="social-login-modal">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
 <div class="main-container">
     <div class="nav-down menu-wrapp"
          style="  top: 0;  transition: top 0.2s ease-in-out;  width: 100%;  position: fixed;      z-index: 1040;">
@@ -64,11 +239,11 @@
                                     </ul>
                                 </div>
                                 <ul class="desctop-hidden nav navbar-nav">
-                                    <li><a href="#">ГОЛОВНА</a></li>
-                                    <li><a href="#">ІНТЕРЄРНІ ЗАЛИ</a></li>
-                                    <li><a href="#">ПРОКАТ ОДЯГУ</a></li>
-                                    <li><a href="#">ФОТОСЕСІЇ</a></li>
-                                    <li><a href="#">БЛОГ</a></li>
+                                    <li><a href="index.html">ГОЛОВНА</a></li>
+                                    <li><a href="interior.html">ІНТЕРЄРНІ ЗАЛИ</a></li>
+                                    <li><a href="rental.html">ПРОКАТ ОДЯГУ</a></li>
+                                    <li><a href="photosession.html">ФОТОСЕСІЇ</a></li>
+                                    <li><a href="blog.html">БЛОГ</a></li>
                                     <li><a href="#">КОНТАКТИ</a></li>
                                 </ul>
                             </div>
@@ -83,11 +258,11 @@
         <div class="main-menu-container">
             <div class="main-menu-container__width-1420">
                 <ul class=" main-menu-container__width-1420__desctop-show desctop-show ">
-                    <li><a href="#">ГОЛОВНА</a></li>
-                    <li><a href="#">ІНТЕРЄРНІ ЗАЛИ</a></li>
-                    <li><a href="#">ПРОКАТ ОДЯГУ</a></li>
-                    <li><a href="#">ФОТОСЕСІЇ</a></li>
-                    <li><a href="#">БЛОГ</a></li>
+                    <li><a href="index.html">ГОЛОВНА</a></li>
+                    <li><a href="interior.html">ІНТЕРЄРНІ ЗАЛИ</a></li>
+                    <li><a href="rental.html">ПРОКАТ ОДЯГУ</a></li>
+                    <li><a href="photosession.html">ФОТОСЕСІЇ</a></li>
+                    <li><a href="blog.html">БЛОГ</a></li>
                     <li><a href="#">КОНТАКТИ</a></li>
                 </ul>
             </div>
@@ -128,7 +303,7 @@
                             <div class="price-container">
                                 <p>Ціна: <strong>1200грн</strong></p>
                                 <div class="more-info-interior">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal">Забронювати</a>
+                                    <a href="#" data-toggle="modal" data-target="#booking">Забронювати</a>
 
                                 </div>
                             </div>
@@ -155,13 +330,13 @@
                 <div class="tematic-wrapper__width-1630__width-1420 padd-top-65">
 
                     <!--<div style="display: flex; justify-content: space-between; width: 100%;padding: 0 10px;">-->
-                        <!--<h2>Тематична фотосесія</h2>-->
-                        <!--<div class="tematic-wrapper__width-1630__width-1420__photosession-arrows">-->
-                            <!--<div class="left-arrow-photosession tematic-left-1"><img src="assets/images/left-arrow.png"-->
-                                                                                     <!--alt="img"></div>-->
-                            <!--<div class="right-arrow-photosession tematic-right-1"><img-->
-                                    <!--src="assets/images/right-arrow.png" alt="img"></div>-->
-                        <!--</div>-->
+                    <!--<h2>Тематична фотосесія</h2>-->
+                    <!--<div class="tematic-wrapper__width-1630__width-1420__photosession-arrows">-->
+                    <!--<div class="left-arrow-photosession tematic-left-1"><img src="assets/images/left-arrow.png"-->
+                    <!--alt="img"></div>-->
+                    <!--<div class="right-arrow-photosession tematic-right-1"><img-->
+                    <!--src="assets/images/right-arrow.png" alt="img"></div>-->
+                    <!--</div>-->
                     <!--</div>-->
                     <div class="tematic-wrapper__width-1630__width-1420__content">
                         <div class="tematic-wrapper__width-1630__width-1420__content__tematic-main width-52">
@@ -181,7 +356,7 @@
                             <div class="price-container">
                                 <p>Ціна: <strong>1200грн</strong></p>
                                 <div class="more-info-interior">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal">Забронювати</a>
+                                    <a href="#" data-toggle="modal" data-target="#booking">Забронювати</a>
 
                                 </div>
                             </div>
@@ -234,7 +409,7 @@
                             <div class="price-container">
                                 <p>Ціна: <strong>1200грн</strong></p>
                                 <div class="more-info-interior">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal">Забронювати</a>
+                                    <a href="#" data-toggle="modal" data-target="#booking">Забронювати</a>
 
                                 </div>
                             </div>
@@ -287,7 +462,8 @@
                             <div class="price-container">
                                 <p>Ціна: <strong>1200грн</strong></p>
                                 <div class="more-info-interior">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal">Забронювати</a>
+                                    <a href="#" data-toggle="modal" data-target="#booking">Забронювати</a>
+
 
                                 </div>
                             </div>
@@ -346,12 +522,11 @@
                             кадрами во время часовой сьемки с Ярославой Прооровой и уже через 2,5 недели у тебя 15
                             фото
                             с ретушью + удачные исходники. Стоимость 5000 грн. Только не забудь заранее записаться:
-                            +380
-                            (66) 830 88 0</p>
+                            +380 (66) 830 88 0</p>
                         <div class="price-container">
                             <p>Ціна: <strong>1200грн</strong></p>
                             <div class="more-info-interior">
-                                <a href="#" data-toggle="modal" data-target="#exampleModal">Забронювати</a>
+                                <a href="#" data-toggle="modal" data-target="#booking">Забронювати</a>
 
                             </div>
                         </div>
