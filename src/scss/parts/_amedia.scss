@@ -114,7 +114,34 @@
 }
 
 @media screen and (max-width: 992px) {
+  .mobile-nav-bottom {
 
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    background-color: #f7f7f7;
+    padding: 9px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &__item {
+      text-align: center;
+
+      img {
+        outline: none;
+      }
+
+      p {
+        margin-bottom: 0;
+        margin-top: 4px;
+      }
+    }
+  }
+
+.copyright-container {
+  margin-bottom: 70px;
+}
 
   .nav-social {
     display: none;
@@ -282,6 +309,10 @@
 }
 
 @media screen and (max-width: 590px) {
+
+  .blog-container {
+    margin-top: 40px !important;
+  }
   .instaram-container__width-1630__instagram-content__width-1420__instagram-wrapper img {
     width: 30%;
     max-width: none;
@@ -366,7 +397,7 @@
     width: 46%;
     max-width: none;
     height: 100%;
-    margin: 5px 6px;
+    margin: 5px 5px !important;
     &:first-child {
       margin-left: auto;
     }
