@@ -1,4 +1,193 @@
 @media (max-width: 768px) {
+
+  .blog-container__width-1630__blog-content__blog-slider .slick-slide {
+    outline: 0;
+    min-height: 380px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .want-container__width-1630__want-content__want-slider .slick-slide {
+    min-height: 360px;
+  }
+
+.right-modal-bg, .left-modal-bg {
+  display: none;
+
+}
+
+  #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div button {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  #exampleModal-1 .modal-wrapp .modal-dialog .modal-content {
+    padding: 10px;
+  }
+  .menu-container__width-1420 .containers .nav-second .navbar-collapse .navbar-nav .nav-info p, .menu-container__width-1420 .containers .nav-second .navbar-collapse .navbar-nav li a, #exampleModal-1 .modal-wrapp .modal-dialog .modal-content .form-style-want input {
+    font-size: 10px !important;
+  }
+
+  .footer-container__width-1420__wrapper__block h3 {
+    font-weight: 200;
+  }
+
+  .footer-container__width-1420__wrapper__block p, .footer-container__width-1420__wrapper__block ul li a, .footer-container__width-1420__wrapper__block p a, .footer-container__width-1420__wrapper__block form input, .copyright-container p, .mobile-nav-bottom__item p {
+    font-size: 10px;
+  }
+
+  .contact-form-container__form__write-to-us .input-group label, .contact-form-container__form__write-to-us .input-group input {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .instaram-container__instagram-left-bg, .instaram-container__instagram-right-bg, .instaram-container__width-1630__center-bg {
+    height: 90px;
+  }
+
+  .contact-form-container__form__write-to-us .input-group label, .contact-form-container__form__write-to-us .input-group input {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .advantages-container__width-1420__wrapper__item {
+    margin: 10px 0;
+    &:nth-child(odd) {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      p {
+        margin-left: 20px;
+      }
+    }
+
+    &:nth-child(even) {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+      p {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .advantages-container__width-1420__wrapper__item img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: inherit;
+  }
+
+  .advantages-container__width-1420__wrapper__item p {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 0;
+    font-family: 'MuseoSansBold';
+  }
+
+  .blog-container__width-1630__blog-content__blog-slider .slick-slide:hover .more-info-btn {
+    padding: 5px 20px;
+    margin: 10px auto 0;
+    opacity: 1;
+    height: auto;
+  }
+
+  .blog-container__width-1630__blog-content__blog-slider__blog-info .blog-subtitle hr {
+    width: 58%;
+    margin-left: 0;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .blog-subtitle {
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .blog-container__width-1630__blog-content__blog-slider__blog-info h3 {
+    font-size: 16px;
+    font-family: "MuseoSansBold";
+    margin-top: 0;
+  }
+
+  .clothes-container__width-1630__clothes-content__clothes-slider .slick-slide {
+    min-height: 550px;
+  }
+
+  .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info .more-btn-slide .more-info-btn {
+    font-size: 12px;
+  }
+
+  .rent-container-price {
+    display: block !important;
+    margin-top: 15px !important;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+
+  .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info h3, .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info p {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .interior-container__width-1630__interior-content h2, .clothes-container__width-1630__clothes-content h2, .want-container__width-1630__want-content h2, .blog-container__width-1630__blog-content h2, .advantages-container__width-1420 h2{
+    font-size: 20px;
+    margin-top: -11px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .contact-form-container__form h2 {
+    font-size: 20px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .instaram-container__width-1630__instagram-content__width-1420 h2 {
+    top: -11px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .interior-container__width-1630__interior-content .interior-slider .more-info-interior p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #exampleModal-2 .modal-wrapp, #exampleModal-3 .modal-wrapp {
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 9999999999;
+    bottom: auto;
+  }
+
+  #exampleModal-3 .modal-wrapp .modal-dialog .modal-content, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content {
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+  }
+
+  #exampleModal-3 .modal-wrapp .modal-dialog .modal-content div button, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content div button {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  #exampleModal-3 .modal-wrapp .modal-dialog .modal-content .social-login-modal a, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content .social-login-modal a {
+    max-width: 110px;
+  }
+
+
   .clothes-container__width-1630__center-bg {
     height: 330px;
   }
@@ -22,6 +211,14 @@
     }
   }
 
+  .want-container__width-1630__want-content__want-slider__want-info {
+    h2 {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+  }
+
   .interior-container__width-1630__interior-content .interior-slider .more-info-interior a {
     display: block;
     margin: 0 auto;
@@ -40,7 +237,8 @@
   }
 
   .instaram-container__width-1630__instagram-content__width-1420 a {
-    font-size: 25px;
+    font-size: 16px;
+    padding: 0 15px;
   }
 
   .header-slider-container__width-1630__slider-block__width-1420__btn-with-dots .dots-container {
@@ -117,6 +315,7 @@
   .mobile-nav-bottom {
 
     width: 100%;
+    z-index: 999;
     position: fixed;
     height: 70px;
     bottom: 0;
@@ -277,7 +476,7 @@
   }
 
   .interior-container__width-1630__interior-content .interior-slider .more-info-interior p {
-    font-size: 25px;
+    font-size: 16px;
     padding: 10px;
   }
 }
@@ -648,11 +847,7 @@
 
 }
 
-@media screen and (min-width: 591px) {
-  .clothes-container {
-    margin-top: 70px;
-  }
-
+@media screen and (min-width:769px) {
   .clothes-container__width-1630__clothes-content__clothes-slider .slick-slide {
     min-height: 700px;
   }
@@ -668,6 +863,16 @@
   .instaram-container__width-1630__center-bg, .instaram-container__instagram-right-bg, .instaram-container__instagram-left-bg {
     height: 435px;
   }
+
+}
+
+@media screen and (min-width: 591px) {
+  .clothes-container {
+    margin-top: 70px;
+  }
+
+
+
 
   .want-container__want-left-bg.gray, .want-container__want-right-bg.gray, .want-container__width-1630__center-bg.gray {
     background-color: transparent;
