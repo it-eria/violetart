@@ -253,6 +253,7 @@ $('.header-slider-container__width-1630__slider-block__header-slider').slick({
     arrows: false,
     autoplay: true,
     appendDots: $(".dots-container")
+
 });
 $('.interior-slider').slick({
     dots: false,
@@ -292,7 +293,7 @@ $('.clothes-container__width-1630__clothes-content__clothes-slider').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }

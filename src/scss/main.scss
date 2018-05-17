@@ -1794,7 +1794,7 @@ p {
   cursor: pointer;
   height: 2px;
   width: 35px;
-  background: #8892c3;
+  background: #000;
   position: absolute;
   display: block;
   content: '';
@@ -3789,6 +3789,12 @@ a[data-toggle='collapse'] {
     text-decoration: none;
   }
 }
+
+.mob-soc, .see-more {
+  display: none;
+}
+
+
 
 @import "parts/amedia";
 
