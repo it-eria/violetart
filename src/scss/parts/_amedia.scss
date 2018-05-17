@@ -1,4 +1,115 @@
 @media (max-width: 768px) {
+  .our-video-container {
+    margin-top: 100px;
+  }
+
+  .room-slider-container__left-bg, .room-slider-container__right-bg, .room-slider-container__width-1630__center-bg, .our-video-container__left-bg, .our-video-container__right-bg, .our-video-container__width-1630__center-bg {
+    height: 210px;
+  }
+
+  .our-video-container__width-1630__width-1420__interior-arrows__left-arrow-interior {
+    margin: 0 10px 0 5px;
+  }
+
+  .our-video-container__width-1630__width-1420__interior-arrows__right-arrow-interior {
+    cursor: pointer;
+    margin: 0 5px 0 10px;
+  }
+
+
+
+  .no-padding-style {
+    padding: 0 !important;
+  }
+
+  .our-video-container__width-1630__width-1420__interior-arrows {
+    margin-top: 10px;
+    display: -webkit-box;
+    position: absolute;
+    justify-content: space-between;
+    display: -ms-flexbox;
+    width: 100%;
+    display: flex;
+  }
+
+
+
+  .our-video-container__width-1630__width-1420 h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'MuseoSansBold';
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 0 40px;
+    margin: 0 auto 20px;
+    max-width: 300px;
+    margin-top: -11px;
+  }
+
+  .room-slider-container:first-child {
+    margin-top: 20%;
+    padding: 0 15px;
+
+  }
+
+  .our-video-container__width-1630__width-1420__video-slider__item__video-description {
+    min-height: auto;
+    h2 {
+      padding: 10px 0 0;
+      letter-spacing: 0;
+      font-size: 16px;
+      font-family: 'MuseoSansRegular';
+      max-width: none;
+      text-transform: none;
+      margin-bottom: 0;
+    }
+  }
+  .room-slider-container {
+    margin-top: 30px;
+    padding: 0 15px;
+
+  }
+
+  .room-slider-container__width-1630 {
+    border-bottom: 5px solid #d0d5d5;
+  }
+
+  .room-slider-container__width-1630__width-1420__room-sub-slider {
+    display: none;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__descr-info p {
+    font-size: 10px;
+    font-family: 'MuseoSansRegular';
+  }
+
+  .room-slider-container__width-1630__width-1420__content__descr-info {
+    padding: 15px;
+    width: 100% !important;
+  }
+
+  .room-slider-container__width-1630__width-1420__content {
+    display: block;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__room-main {
+    width: 100% !important;
+  }
+
+  .room-slider-container__width-1630__width-1420 h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: -11px;
+    text-align: center;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__descr-info h3 {
+    font-size: 16px;
+  }
+
+
+
 
   .blog-container__width-1630__blog-content__blog-slider .slick-slide {
     outline: 0;
@@ -278,20 +389,6 @@
   }
 }
 
-//
-//@media (max-width: 768px) {
-//
-//    .desctop-hidden {
-//        display: block !important;
-//    }
-//
-//    .main-menu-container {
-//        display: none !important;
-//    }
-//
-//
-//}
-
 @media (max-width: 1220px) {
   .footer-container__width-1420__wrapper {
     justify-content: center;
@@ -557,6 +654,36 @@
 }
 
 @media screen and (max-width: 480px) {
+  .room-slider-container__width-1630__width-1420__content__descr-info .price-container .more-info-interior a {
+    margin-top: 15px;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__descr-info .price-container .more-info-interior {
+    width: 100%;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__descr-info .price-container {
+    display: block;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__room-main .slick-slide img {
+    height: auto;
+
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .room-slider-container__width-1630__width-1420__content__room-main {
+    height: 200px;
+    .slick-list {
+      height: 200px;
+    }
+  }
+
+  .room-slider-container {
+    margin-top: 25% !important;
+  }
+
   #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div button {
     margin: 0 auto;
     font-size: 16px;

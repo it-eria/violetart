@@ -143,7 +143,18 @@ $('.room-1-slider').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.room-1-slider-sub'
+    asNavFor: '.room-1-slider-sub',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+
+
+    ]
 });
 $('.room-1-slider-sub').slick({
     slidesToShow: 4,
@@ -151,6 +162,7 @@ $('.room-1-slider-sub').slick({
     asNavFor: '.room-1-slider',
     dots: false,
     autoplay: true,
+    arrows: false,
     focusOnSelect: true
 });
 
@@ -167,6 +179,7 @@ $('.slider-interior-1-sub').slick({
     asNavFor: '.slider-interior-1',
     dots: false,
     autoplay: true,
+    arrows: false,
     focusOnSelect: true
 });
 
@@ -183,6 +196,7 @@ $('.room-2-slider-sub').slick({
     asNavFor: '.room-2-slider',
     dots: false,
     autoplay: true,
+    arrows: false,
     focusOnSelect: true
 });
 $('.room-3-slider').slick({
@@ -198,6 +212,7 @@ $('.room-3-slider-sub').slick({
     asNavFor: '.room-3-slider',
     dots: false,
     autoplay: true,
+    arrows: false,
     focusOnSelect: true
 });
 
