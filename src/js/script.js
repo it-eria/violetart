@@ -722,3 +722,12 @@ $(function(){
         $('#exampleModal-3').modal('hide');
     });
 });
+
+$('.accordion a').on('click', function() {
+    $(this).toggleClass('active');
+    if($(this).hasClass('active')) {
+        $(this).next().addClass('active');
+    } else {
+        $(this).next().removeClass('active');
+    }
+});

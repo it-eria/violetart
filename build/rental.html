@@ -8,8 +8,112 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic"
           rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
+<div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal-1Label"
+     aria-hidden="true">
+    <div class="modal-wrapp">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button class="back-btn" type="button" data-dismiss="modal"><i class="fa fa-angle-left"
+                                                              aria-hidden="true"></i> Назад
+                </button>
+
+                <h2>Фільтри</h2>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <a>Тип одягу</a>
+                        <div class="content">
+                            <form class="filter-form-style" action="#">
+                                <p>
+                                    <input type="checkbox" id="test1" />
+                                    <label for="test1">Плаття</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test2" checked="checked" />
+                                    <label for="test2">Аксесуари</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="test3" checked="checked" />
+                                    <label for="test3">Взуття</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="test4" checked="checked" />
+                                    <label for="test4">Костюми</label>
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Розмір</a>
+                        <div class="content">
+                            <form class="filter-form-style" action="#">
+                                <p>
+                                    <input type="checkbox" id="test5" />
+                                    <label for="test5">XS</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test6" checked="checked" />
+                                    <label for="test6">S</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="test7" checked="checked" />
+                                    <label for="test7">M</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="test8" checked="checked" />
+                                    <label for="test8">L</label>
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Ціна</a>
+                        <div class="content">
+                            <form class="filter-form-style" action="#">
+                                <p>
+                                    <input type="checkbox" id="test9" />
+                                    <label for="test9">Від 500 до 1000 грн</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test10" checked="checked" />
+                                    <label for="test10">Від 1000 до 1500 грн</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="test11" checked="checked" />
+                                    <label for="test11">Від 1500 до 2000 грн</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="test12" checked="checked" />
+                                    <label for="test12">Від 2000 до 2500 грн</label>
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="filter-btn-modal" href="#">Відправити</a>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModal-1Label"
      aria-hidden="true">
     <div class="modal-wrapp">
@@ -79,21 +183,26 @@
     </div>
 </div>
 <div class="main-container">
-    <div class="nav-down menu-wrapp" style="  top: 0;  transition: top 0.2s ease-in-out;  width: 100%;  position: fixed;      z-index: 1040;">
+    <div class="nav-down menu-wrapp" style="top: 0; transition: top 0.2s ease-in-out; width: 100%; position: fixed; z-index: 1040;">
         <div class="menu-container ">
             <div class="menu-container__width-1420">
                 <div class="containers">
                     <nav class="navbar nav-second navbar-default" data-spy="affix" data-offset-top="60"
                          data-offset-bottom="200">
                         <div class="navbar-header">
-                            <button id="menu-burger" type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target="#first">
-                                <span></span>
-                            </button>
+                            <div class="mob-soc">
+                                <a href="#"><img src="assets/images/fb-icon.png" alt="img"/></a>
+                                <a href="#"><img src="assets/images/insta-icon.png" alt="img"/></a>
+                            </div>
+
                             <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#"><img
                                     src="assets/images/logo.png"
                                     alt="Brand"
                                     height="80"/></a>
+
+                            <button id="menu-burger" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#first">
+                                <span></span>
+                            </button>
                         </div>
                         <div class="collapse navbar-collapse" id="first">
                             <div class="space-style">
@@ -122,8 +231,7 @@
                                         <a href="#"><img src="assets/images/insta-icon.png" alt="img"/> </a>
                                     </div>
                                     <ul class="nav-login">
-                                        <li><a role="button" data-toggle="modal" data-target="#exampleModal-3" href="#">ЗАРЕЄСТРУВАТИСЬ</a>
-                                        </li>
+                                        <li><a role="button" data-toggle="modal" data-target="#exampleModal-3" href="#">ЗАРЕЄСТРУВАТИСЬ</a></li>
                                         <li><a role="button" data-toggle="modal" data-target="#exampleModal-2" href="#">УВІЙТИ</a>
                                         </li>
 
@@ -208,13 +316,16 @@
                                     <h2>Прокат одягу</h2>
                                 </div>
 
+                                <a id="show-filter" data-toggle="modal" data-target="#filter-modal" class="filter-btn">Фільтри</a>
+
+
                                 <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items">
                                     <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental">
                                         <a href="rental-single.html"><img src="assets/images/wear-1.jpg" alt="img"/></a>
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -231,7 +342,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -249,7 +360,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -267,7 +378,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -285,7 +396,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -303,7 +414,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -321,7 +432,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -339,7 +450,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -357,7 +468,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -375,7 +486,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -393,7 +504,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -411,7 +522,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -429,7 +540,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -447,7 +558,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -465,7 +576,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -483,7 +594,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -501,7 +612,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -519,7 +630,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -537,7 +648,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -555,7 +666,7 @@
                                         <div class="rental-container__width-1630__width-1420__wrap-with-sidebar__content__width-1000__clothes-content__clothes-items__item-rental__clothes-info">
                                             <h3>Armonia</h3>
                                             <p><strong>Платя молочного кольору</strong></p>
-                                            <div style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
+                                            <div class="rent-padd-style" style="display: flex; width: 100%; justify-content: space-between; align-items: flex-start; margin-top: 35px;">
                                                 <div class="space-between">
                                                     <p>Аренда</p>
                                                     <p><strong>2800 грн</strong></p>
@@ -634,6 +745,23 @@
     </div>
     <div class="copyright-container text-center">
         <p>2018 All Rights reserved</p>
+    </div>
+
+    <div class="mobile-nav-bottom">
+        <div class="mobile-nav-bottom__item">
+            <a href="#"><img src="assets/images/call-fixed-footer.png" alt="img" /></a>
+            <p>Зателефонувати</p>
+        </div>
+
+        <div class="mobile-nav-bottom__item">
+            <a href="#"><img src="assets/images/want-fixed-footer.png" alt="img" /></a>
+            <p>ХОЧУ</p>
+        </div>
+
+        <div class="mobile-nav-bottom__item">
+            <a href="#"><img src="assets/images/rent-fixed-footer.png" alt="img" /></a>
+            <p>Бронювання</p>
+        </div>
     </div>
 
 </div>
