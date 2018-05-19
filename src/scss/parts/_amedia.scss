@@ -158,6 +158,53 @@
 
   @media screen and (max-width: 992px) {
 
+    .blog-container__width-1630__width-1420__content {
+      margin-bottom: 40px;
+    }
+
+    .reverse-blog-items-single {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
+
+
+    .blog-container__width-1630__width-1420__content__blog-single {
+      padding: 15px;
+    }
+
+    .blog-container__width-1630__width-1420__content__blog-single .post-blog-nav .next-post a, .blog-container__width-1630__width-1420__content__blog-single .post-blog-nav .prev-post a {
+      font-size: 12px;
+    }
+
+    .blog-container__width-1630__width-1420__content__blog-single .line-botom-blog p {
+      font-size: 10px;
+    }
+
+    .blog-container__width-1630__width-1420__content__blog-single {
+      h4 {
+        font-size: 12px;
+      }
+    }
+
+    .blog-container__width-1630__width-1420__content__blog-single p {
+      font-size: 10px;
+    }
+
+    .blog-container__width-1630__width-1420__content__blog-single h2 {
+      width: 100%;
+      text-align: left !important;
+      font-size: 16px !important;
+      font-family: 'MuseoSansBold';
+      text-transform: none !important;
+      letter-spacing: normal !important;
+      margin-bottom: 20px;
+      margin-top: 0 !important;
+    }
+
     .blog-container__width-1630__width-1420__sidebar-left__sidebar-item__interior__heading a, .blog-container__width-1630__width-1420__sidebar-left__sidebar-item__clothes__heading a {
       color: #000;
       text-decoration: none;
@@ -1265,6 +1312,12 @@
     }
   }
 
+  @media (max-width: 660px) {
+    .blog-container__width-1630__width-1420__content {
+      width: 100%;
+    }
+  }
+
   @media screen and (max-width: 1019px) {
     .instaram-container__width-1630__instagram-content__width-1420__instagram-wrapper img {
       width: 31%;
@@ -1442,6 +1495,15 @@
   }
 
   @media screen and (max-width: 480px) {
+
+    .blog-container__width-1630__width-1420__content__blog-single__grid-img .big-img, .blog-container__width-1630__width-1420__content__blog-single__grid-img .small-img {
+      width: 100%;
+      margin: 0;
+    }
+
+    .blog-container__width-1630__width-1420__content__blog-single__grid-img {
+      display: block;
+    }
 
     .blog-container {
       position: relative;
