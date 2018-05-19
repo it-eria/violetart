@@ -50,7 +50,20 @@ $('.single-interior-container__width-1420__product-wrapp__slider-interior-left__
     focusOnSelect: true,
     verticalSwiping: true,
     arrows: false,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 591,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                vertical: true,
+                focusOnSelect: true,
+                verticalSwiping: true
+            }
+        }
+
+    ]
 
 });
 

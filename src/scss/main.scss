@@ -3893,7 +3893,7 @@ a[data-toggle='collapse'] {
 }
 
 .filter-btn {
-  display: block;
+  display: none;
   width: 100%;
   padding: 10px 20px;
   max-width: 272px;
@@ -3906,7 +3906,15 @@ a[data-toggle='collapse'] {
   background-color: transparent;
   color: #7d7e80;
   margin-bottom: 15px;
+  &:hover {
+    text-decoration: none;
+    color: #7d7e80;
+  }
 
+  &:focus {
+    text-decoration: none;
+    color: #7d7e80;
+  }
 }
 
 .accordion-item a {
@@ -4003,6 +4011,13 @@ a[data-toggle='collapse'] {
 
 }
 
+.mobile-centered-block, .single-mobile-title, .mobile-show-title, .buy-now-mobile, .mobile-cart-title-item {
+  display: none;
+}
+
+.desctop-cart-title-item {
+  display: block;
+}
 
 
 @import "parts/amedia";
