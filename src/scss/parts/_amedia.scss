@@ -27,473 +27,20 @@
     }
   }
 
-  @media (max-width: 1280px) {
-    .rental-container {
-      margin-top: 20%;
-    }
-  }
+
 
   @media (max-width: 1100px) {
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     .rental-container {
       margin-top: 24%;
     }
   }
 
-  @media (max-width: 768px) {
-    .single-interior-container {
-      margin-top: 20%;
-    }
 
-
-    .single-interior-container__width-1420__product-wrapp__slider-interior-left {
-      justify-content: normal;
-    }
-
-    .single-interior-container__width-1420__product-wrapp__slider-interior-left {
-      justify-content: flex-end;
-    }
-
-    .mobile-show-title {
-      display: block;
-      font-size: 16px;
-    }
-
-    .single-interior-container__width-1420__product-wrapp__info-interior-right h2 {
-      display: none;
-    }
-
-    .single-mobile-title {
-      display: block;
-      font-size: 20px;
-      top: -11px;
-      position: relative;
-      letter-spacing: 6px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      font-family: 'MuseoSansBold';
-      text-align: center;
-    }
-
-    .mobile-centered-block {
-      display: block;
-      width: 100%;
-      height: 235px;
-      left: 0;
-      right: 0;
-      position: absolute;
-      top: 0;
-      z-index: -1;
-    }
-    .single-interior-container__width-1420__product-wrapp {
-      display: block;
-    }
-
-    #booking .modal-dialog .modal-content .form-style-want p, #booking .modal-dialog .modal-content button {
-      font-size: 12px;
-    }
-
-    #booking .modal-dialog .modal-content p {
-      font-size: 10px;
-      text-align: right;
-    }
-
-    #booking .panel-heading a {
-      font-size: 12px;
-    }
-
-    #booking .panel-body p {
-      font-size: 10px;
-      margin: 10px 0;
-    }
-
-    #booking .modal-dialog .modal-content .form-style-want input, #booking .modal-dialog .modal-content .form-style-want select, #booking .modal-dialog .modal-content .form-style-want .with-label label {
-      font-size: 10px;
-    }
-
-    #booking .modal-dialog .modal-content .back-btn {
-      font-size: 10px;
-    }
-
-    #booking .modal-dialog .modal-content h2 {
-      font-size: 20px;
-      font-family: 'MuseoSansBold';
-      text-align: center;
-    }
-
-
-    #booking .modal-dialog {
-      margin: 0;
-    }
-
-    #booking .modal-dialog .modal-content {
-      padding: 15px;
-    }
-
-    #booking {
-      padding-left: 0 !important;
-    }
-
-    .booking-modal-img {
-      display: none;
-    }
-
-    .our-video-container {
-      margin-top: 100px;
-    }
-
-    .room-slider-container__left-bg, .room-slider-container__right-bg, .room-slider-container__width-1630__center-bg, .our-video-container__left-bg, .our-video-container__right-bg, .our-video-container__width-1630__center-bg {
-      height: 210px;
-    }
-
-    .our-video-container__width-1630__width-1420__interior-arrows__left-arrow-interior {
-      margin: 0 10px 0 5px;
-    }
-
-    .our-video-container__width-1630__width-1420__interior-arrows__right-arrow-interior {
-      cursor: pointer;
-      margin: 0 5px 0 10px;
-    }
-
-
-
-    .no-padding-style {
-      padding: 0 !important;
-    }
-
-    .our-video-container__width-1630__width-1420__interior-arrows {
-      margin-top: 10px;
-      display: -webkit-box;
-      position: absolute;
-      justify-content: space-between;
-      display: -ms-flexbox;
-      width: 100%;
-      display: flex;
-    }
-
-
-
-    .our-video-container__width-1630__width-1420 h2 {
-      width: 100%;
-      text-align: center;
-      font-size: 20px;
-      font-family: 'MuseoSansBold';
-      text-transform: uppercase;
-      letter-spacing: 6px;
-      padding: 0 40px;
-      margin: 0 auto 20px;
-      max-width: 300px;
-      margin-top: -11px;
-    }
-
-    .room-slider-container:first-child {
-      margin-top: 20%;
-      padding: 0 15px;
-
-    }
-
-    .our-video-container__width-1630__width-1420__video-slider__item__video-description {
-      min-height: auto;
-      h2 {
-        padding: 10px 0 0;
-        letter-spacing: 0;
-        font-size: 16px;
-        font-family: 'MuseoSansRegular';
-        max-width: none;
-        text-transform: none;
-        margin-bottom: 0;
-      }
-    }
-    .room-slider-container {
-      margin-top: 30px;
-      padding: 0 15px;
-
-    }
-
-    .room-slider-container__width-1630 {
-      border-bottom: 5px solid #d0d5d5;
-    }
-
-    .room-slider-container__width-1630__width-1420__room-sub-slider {
-      display: none;
-    }
-
-    .room-slider-container__width-1630__width-1420__content__descr-info p {
-      font-size: 10px;
-      font-family: 'MuseoSansRegular';
-    }
-
-    .room-slider-container__width-1630__width-1420__content__descr-info {
-      padding: 15px;
-      width: 100% !important;
-    }
-
-    .room-slider-container__width-1630__width-1420__content {
-      display: block;
-    }
-
-    .room-slider-container__width-1630__width-1420__content__room-main {
-      width: 100% !important;
-    }
-
-    .room-slider-container__width-1630__width-1420 h2 {
-      font-size: 20px;
-      margin-bottom: 20px;
-      margin-top: -11px;
-      text-align: center;
-    }
-
-    .room-slider-container__width-1630__width-1420__content__descr-info h3 {
-      font-size: 16px;
-    }
-
-
-
-
-    .blog-container__width-1630__blog-content__blog-slider .slick-slide {
-      outline: 0;
-      min-height: 380px;
-      cursor: pointer;
-      padding: 10px;
-    }
-
-    .want-container__width-1630__want-content__want-slider .slick-slide {
-      min-height: 360px;
-    }
-
-    .right-modal-bg, .left-modal-bg {
-      display: none;
-
-    }
-
-    #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div button {
-      margin: 0 auto;
-      font-size: 16px;
-    }
-
-    #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div p {
-      font-size: 10px;
-      margin-bottom: 10px;
-    }
-
-    #exampleModal-1 .modal-wrapp .modal-dialog .modal-content {
-      padding: 10px;
-    }
-    .menu-container__width-1420 .containers .nav-second .navbar-collapse .navbar-nav .nav-info p, .menu-container__width-1420 .containers .nav-second .navbar-collapse .navbar-nav li a, #exampleModal-1 .modal-wrapp .modal-dialog .modal-content .form-style-want input {
-      font-size: 10px !important;
-    }
-
-    .footer-container__width-1420__wrapper__block h3 {
-      font-weight: 200;
-    }
-
-    .footer-container__width-1420__wrapper__block p, .footer-container__width-1420__wrapper__block ul li a, .footer-container__width-1420__wrapper__block p a, .footer-container__width-1420__wrapper__block form input, .copyright-container p, .mobile-nav-bottom__item p {
-      font-size: 10px;
-    }
-
-    .contact-form-container__form__write-to-us .input-group label, .contact-form-container__form__write-to-us .input-group input {
-      font-size: 10px;
-      font-weight: 700;
-    }
-    .instaram-container__instagram-left-bg, .instaram-container__instagram-right-bg, .instaram-container__width-1630__center-bg {
-      height: 90px;
-    }
-
-    .contact-form-container__form__write-to-us .input-group label, .contact-form-container__form__write-to-us .input-group input {
-      font-size: 10px;
-      font-weight: 700;
-    }
-
-    .advantages-container__width-1420__wrapper__item {
-      margin: 10px 0;
-      &:nth-child(odd) {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        p {
-          margin-left: 20px;
-        }
-      }
-
-      &:nth-child(even) {
-        width: 100%;
-        flex-direction: row-reverse;
-        align-items: center;
-        p {
-          margin-right: 20px;
-        }
-      }
-    }
-
-    .advantages-container__width-1420__wrapper__item img {
-      width: 60px;
-      height: 60px;
-      display: block;
-      margin: inherit;
-    }
-
-    .advantages-container__width-1420__wrapper__item p {
-      display: block;
-      text-align: center;
-      font-size: 10px;
-      margin-top: 0;
-      font-family: 'MuseoSansBold';
-    }
-
-    .blog-container__width-1630__blog-content__blog-slider .slick-slide:hover .more-info-btn {
-      padding: 5px 20px;
-      margin: 10px auto 0;
-      opacity: 1;
-      height: auto;
-    }
-
-    .blog-container__width-1630__blog-content__blog-slider__blog-info .blog-subtitle hr {
-      width: 58%;
-      margin-left: 0;
-      height: 1px;
-      background-color: #ccc;
-    }
-
-    .blog-subtitle {
-      p {
-        font-size: 10px;
-      }
-    }
-
-    .blog-container__width-1630__blog-content__blog-slider__blog-info h3 {
-      font-size: 16px;
-      font-family: "MuseoSansBold";
-      margin-top: 0;
-    }
-
-    .clothes-container__width-1630__clothes-content__clothes-slider .slick-slide {
-      min-height: 550px;
-    }
-
-    .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info .more-btn-slide .more-info-btn {
-      font-size: 12px;
-    }
-
-    .rent-container-price {
-      display: block !important;
-      margin-top: 15px !important;
-      & > div {
-        display: flex;
-        justify-content: space-between;
-
-      }
-    }
-
-    .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info h3, .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info p {
-      margin: 0;
-      font-size: 10px;
-    }
-
-    .interior-container__width-1630__interior-content h2, .clothes-container__width-1630__clothes-content h2, .want-container__width-1630__want-content h2, .blog-container__width-1630__blog-content h2, .advantages-container__width-1420 h2{
-      font-size: 20px;
-      margin-top: -11px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .contact-form-container__form h2 {
-      font-size: 20px;
-      margin-top: -40px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .instaram-container__width-1630__instagram-content__width-1420 h2 {
-      top: -11px;
-      font-size: 20px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .interior-container__width-1630__interior-content .interior-slider .more-info-interior p {
-      font-size: 16px;
-      padding: 10px;
-    }
-
-    #exampleModal-2 .modal-wrapp, #exampleModal-3 .modal-wrapp {
-      top: 50%;
-      transform: translate(0%, -50%);
-      z-index: 9999999999;
-      bottom: auto;
-    }
-
-    #exampleModal-3 .modal-wrapp .modal-dialog .modal-content, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content {
-      padding: 10px;
-      border-radius: 0;
-      border: none;
-    }
-
-    #exampleModal-3 .modal-wrapp .modal-dialog .modal-content div button, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content div button {
-      font-size: 16px;
-      letter-spacing: 2px;
-    }
-
-    #exampleModal-3 .modal-wrapp .modal-dialog .modal-content .social-login-modal a, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content .social-login-modal a {
-      max-width: 110px;
-    }
-
-
-    .clothes-container__width-1630__center-bg {
-      height: 330px;
-    }
-
-    .see-more {
-      display: block;
-      border: 1px solid #8892c3;
-      text-align: center;
-      font-size: 14px;
-      padding: 10px 25px;
-      color: #000;
-      margin: 0 auto 40px;
-      text-decoration: none;
-      &:focus {
-        text-decoration: none;
-        color: #000;
-      }
-      &:hover {
-        text-decoration: none;
-        color: #000;
-      }
-    }
-
-    .want-container__width-1630__want-content__want-slider__want-info {
-      h2 {
-        font-size: 16px;
-        margin-bottom: 0;
-      }
-
-    }
-
-    .interior-container__width-1630__interior-content .interior-slider .more-info-interior a {
-      display: block;
-      margin: 0 auto;
-    }
-
-    .interior-container__width-1630__interior-content .interior-slider .slick-list {
-      z-index: 1;
-    }
-
-    .interior-container__width-1630__interior-content h2, .interior-container__width-1630__interior-content .interior-slider .more-info-interior p, .clothes-container__width-1630__clothes-content h2, .want-container__width-1630__want-content h2, .blog-container__width-1630__blog-content h2 {
-      text-align: center;
-    }
-
-    .interior-arrows, .clothes-container__width-1630__clothes-content__clothes-arrows, .want-container__width-1630__want-content__want-arrows, .blog-container__width-1630__blog-content__blog-arrows {
-      display: none;
-    }
-
-    .instaram-container__width-1630__instagram-content__width-1420 a {
-      font-size: 16px;
-      padding: 0 15px;
-    }
-
-    .header-slider-container__width-1630__slider-block__width-1420__btn-with-dots .dots-container {
-      display: none;
-    }
-  }
 
   @media (min-width: 768px) {
     .nav-second .navbar-nav {
@@ -557,7 +104,121 @@
     }
   }
 
+
+
+  @media screen and (max-width: 390px) {
+    .header-slider-container {
+      margin-top: 20%;
+    }
+
+    .header-slider-container__width-1630__slider-block__width-1420__arrows-header {
+      top: 30%;
+    }
+  }
+
+  @media screen and (max-width: 1418px) {
+    .tematic-photosession-container {
+      margin-top: 20% !important;
+    }
+
+    .instaram-container__width-1630__instagram-content__width-1420__instagram-wrapper img {
+      width: 32%;
+      max-width: none;
+      height: 32%;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .tematic-photosession-container {
+      margin-top: 25%!important;
+    }
+
+    .rental-container {
+      margin-top: 20%;
+    }
+  }
+
+
+
   @media screen and (max-width: 992px) {
+
+    .tematic-photosession-container {
+      margin-top: 17%!important;
+    }
+
+    .padd-top-65 {
+      padding-top: 18px;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__center-bg, .tematic-photosession-container .tematic-wrapper__right-bg, .tematic-photosession-container .tematic-wrapper__left-bg {
+      height: 240px;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__tematic-sub-slider .slick-slide {
+      height: auto;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info .price-container .more-info-interior {
+      width: auto;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__tematic-main .slick-slide img {
+      width: 100%;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__tematic-main {
+      height: auto;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info .price-container .more-info-interior a {
+      background-color: #8892c3;
+      padding: 7px 25px;
+      font-size: 12px;
+      font-weight: 100;
+      width: 100%;
+      display: block;
+      color: #fff;
+      text-align: center;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info p, .room-slider-container__width-1630__width-1420__content__descr-info p {
+      font-size: 10px;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info h3, .room-slider-container__width-1630__width-1420__content__descr-info h3 {
+      font-size: 16px;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info .price-container p, .room-slider-container__width-1630__width-1420__content__descr-info .price-container p {
+      font-size: 12px;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info, .room-slider-container__width-1630__width-1420__content__descr-info {
+      padding: 15px;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__photosession-arrows, .room-slider-container__width-1630__width-1420__photosession-arrows {
+      display: none;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420 h2, .room-slider-container__width-1630__width-1420 h2 {
+      text-align: center;
+      font-size: 20px;
+      font-family: "MuseoSansBold";
+      margin-bottom: 20px;
+      margin-top: -11px;
+    }
+
+    .room-slider-container__width-1630__width-1420__content__descr-info .price-container .more-info-interior a {
+      background-color: #8892c3;
+      padding: 7px 25px;
+      font-size: 12px;
+      font-weight: 100;
+      width: 100%;
+      display: block;
+      color: #fff;
+      text-align: center;
+    }
 
     #cart-modal .modal-dialog {
       margin: 0;
@@ -969,21 +630,559 @@
     }
   }
 
-  @media screen and (max-width: 390px) {
-    .header-slider-container {
+  @media (max-width: 768px) {
+
+    .tematic-photosession-container {
+      margin-top: 22%!important;
+    }
+
+    .room-slider-container__width-1630__width-1420__photosession-arrows {
+      margin-bottom: 15px;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession__price-photosession__photosession-more-info {
+      margin-top: 20px;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession h2 {
+      font-size: 16px !important;
+      text-transform: none !important;
+      font-family: 'MuseoSansBold';
+      margin-top: 0 !important;
+      letter-spacing: normal !important;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession__price-photosession {
+
+      display: block;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 232px;
+      padding: 0 40px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+
+    .photosession-container__width-1630__width-1420__photosession-arrows .left-arrow-photosession {
+      margin: 0 10px 0 0;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-arrows .right-arrow-photosession {
+      cursor: pointer;
+      margin: 0 0 0 10px;
+      position: absolute;
+      right: 3%;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession {
+      padding: 15px 5px;
+      position: relative;
+    }
+
+    .mob-arrows-photosession {
+      display: flex;
+      width: 100%;
+      margin-right: 0;
+      top: 41%;
+      margin-top: 0;
+      position: absolute;
+      justify-content: space-between;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__grid-img__big-img {
+      width: 100%;
+      margin: 0;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1 {
+      padding: 0 5px;
+    }
+
+    .desct-arrows-photosession, .photosession-container__width-1630__width-1420__photosession-slider-1__grid-img__small-img {
+      display: none;
+    }
+
+    .photosession-container__width-1630__width-1420 h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      font-family: "MuseoSansBold";
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      margin-bottom: 20px;
+      margin-top: -11px;
+    }
+
+    .single-interior-container {
       margin-top: 20%;
     }
 
-    .header-slider-container__width-1630__slider-block__width-1420__arrows-header {
-      top: 30%;
-    }
-  }
 
-  @media screen and (max-width: 1418px) {
-    .instaram-container__width-1630__instagram-content__width-1420__instagram-wrapper img {
-      width: 32%;
-      max-width: none;
-      height: 32%;
+    .single-interior-container__width-1420__product-wrapp__slider-interior-left {
+      justify-content: normal;
+    }
+
+    .single-interior-container__width-1420__product-wrapp__slider-interior-left {
+      justify-content: flex-end;
+    }
+
+    .mobile-show-title {
+      display: block;
+      font-size: 16px;
+    }
+
+    .single-interior-container__width-1420__product-wrapp__info-interior-right h2 {
+      display: none;
+    }
+
+    .single-mobile-title {
+      display: block;
+      font-size: 20px;
+      top: -11px;
+      position: relative;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-family: 'MuseoSansBold';
+      text-align: center;
+    }
+
+    .mobile-centered-block {
+      display: block;
+      width: 100%;
+      height: 235px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    .single-interior-container__width-1420__product-wrapp {
+      display: block;
+    }
+
+    #booking .modal-dialog .modal-content .form-style-want p, #booking .modal-dialog .modal-content button, .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession__price-photosession p, .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession__price-photosession__photosession-more-info {
+      font-size: 12px;
+
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession__price-photosession__photosession-more-info {
+      display: block;
+    }
+
+    .photosession-container__width-1630__width-1420__photosession-slider-1__more-info-photosession__price-photosession p {
+      text-align: center;
+    }
+
+    #booking .modal-dialog .modal-content p {
+      font-size: 10px;
+      text-align: right;
+    }
+
+    #booking .panel-heading a {
+      font-size: 12px;
+    }
+
+    #booking .panel-body p {
+      font-size: 10px;
+      margin: 10px 0;
+    }
+
+    #booking .modal-dialog .modal-content .form-style-want input, #booking .modal-dialog .modal-content .form-style-want select, #booking .modal-dialog .modal-content .form-style-want .with-label label {
+      font-size: 10px;
+    }
+
+    #booking .modal-dialog .modal-content .back-btn {
+      font-size: 10px;
+    }
+
+    #booking .modal-dialog .modal-content h2 {
+      font-size: 20px;
+      font-family: 'MuseoSansBold';
+      text-align: center;
+    }
+
+
+    #booking .modal-dialog {
+      margin: 0;
+    }
+
+    #booking .modal-dialog .modal-content {
+      padding: 15px;
+    }
+
+    #booking {
+      padding-left: 0 !important;
+    }
+
+    .booking-modal-img {
+      display: none;
+    }
+
+    .our-video-container {
+      margin-top: 100px;
+    }
+
+    .room-slider-container__left-bg, .room-slider-container__right-bg, .room-slider-container__width-1630__center-bg, .our-video-container__left-bg, .our-video-container__right-bg, .our-video-container__width-1630__center-bg {
+      height: 210px;
+    }
+
+    .our-video-container__width-1630__width-1420__interior-arrows__left-arrow-interior {
+      margin: 0 10px 0 5px;
+    }
+
+    .our-video-container__width-1630__width-1420__interior-arrows__right-arrow-interior {
+      cursor: pointer;
+      margin: 0 5px 0 10px;
+    }
+
+
+
+    .no-padding-style {
+      padding: 0 !important;
+    }
+
+    .our-video-container__width-1630__width-1420__interior-arrows {
+      margin-top: 10px;
+      display: -webkit-box;
+      position: absolute;
+      justify-content: space-between;
+      display: -ms-flexbox;
+      width: 100%;
+      display: flex;
+    }
+
+
+
+    .our-video-container__width-1630__width-1420 h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'MuseoSansBold';
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      padding: 0 40px;
+      margin: 0 auto 20px;
+      max-width: 300px;
+      margin-top: -11px;
+    }
+
+    .room-slider-container:first-child {
+      margin-top: 20%;
+      padding: 0 15px;
+
+    }
+
+    .our-video-container__width-1630__width-1420__video-slider__item__video-description {
+      min-height: auto;
+      h2 {
+        padding: 10px 0 0;
+        letter-spacing: 0;
+        font-size: 16px;
+        font-family: 'MuseoSansRegular';
+        max-width: none;
+        text-transform: none;
+        margin-bottom: 0;
+      }
+    }
+    .room-slider-container {
+      margin-top: 30px;
+      padding: 0 15px;
+
+    }
+
+    .room-slider-container__width-1630 {
+      border-bottom: 5px solid #d0d5d5;
+    }
+
+    .room-slider-container__width-1630__width-1420__room-sub-slider {
+      display: none;
+    }
+
+    .room-slider-container__width-1630__width-1420__content__descr-info p {
+      font-size: 10px;
+      font-family: 'MuseoSansRegular';
+    }
+
+    .room-slider-container__width-1630__width-1420__content__descr-info {
+      padding: 15px;
+      width: 100% !important;
+    }
+
+    .room-slider-container__width-1630__width-1420__content {
+      display: block;
+    }
+
+    .room-slider-container__width-1630__width-1420__content__room-main {
+      width: 100% !important;
+    }
+
+    .room-slider-container__width-1630__width-1420 h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-top: -11px;
+      text-align: center;
+    }
+
+    .room-slider-container__width-1630__width-1420__content__descr-info h3 {
+      font-size: 16px;
+    }
+
+
+
+
+    .blog-container__width-1630__blog-content__blog-slider .slick-slide {
+      outline: 0;
+      min-height: 380px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .want-container__width-1630__want-content__want-slider .slick-slide {
+      min-height: 360px;
+    }
+
+    .right-modal-bg, .left-modal-bg {
+      display: none;
+
+    }
+
+    #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div button {
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    #exampleModal-1 .modal-wrapp .modal-dialog .modal-content div p {
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+
+    #exampleModal-1 .modal-wrapp .modal-dialog .modal-content {
+      padding: 10px;
+    }
+    .menu-container__width-1420 .containers .nav-second .navbar-collapse .navbar-nav .nav-info p, .menu-container__width-1420 .containers .nav-second .navbar-collapse .navbar-nav li a, #exampleModal-1 .modal-wrapp .modal-dialog .modal-content .form-style-want input {
+      font-size: 10px !important;
+    }
+
+    .footer-container__width-1420__wrapper__block h3 {
+      font-weight: 200;
+    }
+
+    .footer-container__width-1420__wrapper__block p, .footer-container__width-1420__wrapper__block ul li a, .footer-container__width-1420__wrapper__block p a, .footer-container__width-1420__wrapper__block form input, .copyright-container p, .mobile-nav-bottom__item p {
+      font-size: 10px;
+    }
+
+    .contact-form-container__form__write-to-us .input-group label, .contact-form-container__form__write-to-us .input-group input {
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .instaram-container__instagram-left-bg, .instaram-container__instagram-right-bg, .instaram-container__width-1630__center-bg {
+      height: 90px;
+    }
+
+    .contact-form-container__form__write-to-us .input-group label, .contact-form-container__form__write-to-us .input-group input {
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .advantages-container__width-1420__wrapper__item {
+      margin: 10px 0;
+      &:nth-child(odd) {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        p {
+          margin-left: 20px;
+        }
+      }
+
+      &:nth-child(even) {
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        p {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .advantages-container__width-1420__wrapper__item img {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: inherit;
+    }
+
+    .advantages-container__width-1420__wrapper__item p {
+      display: block;
+      text-align: center;
+      font-size: 10px;
+      margin-top: 0;
+      font-family: 'MuseoSansBold';
+    }
+
+    .blog-container__width-1630__blog-content__blog-slider .slick-slide:hover .more-info-btn {
+      padding: 5px 20px;
+      margin: 10px auto 0;
+      opacity: 1;
+      height: auto;
+    }
+
+    .blog-container__width-1630__blog-content__blog-slider__blog-info .blog-subtitle hr {
+      width: 58%;
+      margin-left: 0;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    .blog-subtitle {
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .blog-container__width-1630__blog-content__blog-slider__blog-info h3 {
+      font-size: 16px;
+      font-family: "MuseoSansBold";
+      margin-top: 0;
+    }
+
+    .clothes-container__width-1630__clothes-content__clothes-slider .slick-slide {
+      min-height: 550px;
+    }
+
+    .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info .more-btn-slide .more-info-btn {
+      font-size: 12px;
+    }
+
+    .rent-container-price {
+      display: block !important;
+      margin-top: 15px !important;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+
+      }
+    }
+
+    .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info h3, .clothes-container__width-1630__clothes-content__clothes-slider__clothes-info p {
+      margin: 0;
+      font-size: 10px;
+    }
+
+    .interior-container__width-1630__interior-content h2, .clothes-container__width-1630__clothes-content h2, .want-container__width-1630__want-content h2, .blog-container__width-1630__blog-content h2, .advantages-container__width-1420 h2{
+      font-size: 20px;
+      margin-top: -11px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .contact-form-container__form h2 {
+      font-size: 20px;
+      margin-top: -40px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .instaram-container__width-1630__instagram-content__width-1420 h2 {
+      top: -11px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .interior-container__width-1630__interior-content .interior-slider .more-info-interior p {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    #exampleModal-2 .modal-wrapp, #exampleModal-3 .modal-wrapp {
+      top: 50%;
+      transform: translate(0%, -50%);
+      z-index: 9999999999;
+      bottom: auto;
+    }
+
+    #exampleModal-3 .modal-wrapp .modal-dialog .modal-content, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content {
+      padding: 10px;
+      border-radius: 0;
+      border: none;
+    }
+
+    #exampleModal-3 .modal-wrapp .modal-dialog .modal-content div button, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content div button {
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+
+    #exampleModal-3 .modal-wrapp .modal-dialog .modal-content .social-login-modal a, #exampleModal-2 .modal-wrapp .modal-dialog .modal-content .social-login-modal a {
+      max-width: 110px;
+    }
+
+
+    .clothes-container__width-1630__center-bg {
+      height: 330px;
+    }
+
+    .see-more {
+      display: block;
+      border: 1px solid #8892c3;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 25px;
+      color: #000;
+      margin: 0 auto 40px;
+      text-decoration: none;
+      &:focus {
+        text-decoration: none;
+        color: #000;
+      }
+      &:hover {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    .want-container__width-1630__want-content__want-slider__want-info {
+      h2 {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+
+    }
+
+    .interior-container__width-1630__interior-content .interior-slider .more-info-interior a {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .interior-container__width-1630__interior-content .interior-slider .slick-list {
+      z-index: 1;
+    }
+
+    .interior-container__width-1630__interior-content h2, .interior-container__width-1630__interior-content .interior-slider .more-info-interior p, .clothes-container__width-1630__clothes-content h2, .want-container__width-1630__want-content h2, .blog-container__width-1630__blog-content h2 {
+      text-align: center;
+    }
+
+    .interior-arrows, .clothes-container__width-1630__clothes-content__clothes-arrows, .want-container__width-1630__want-content__want-arrows, .blog-container__width-1630__blog-content__blog-arrows {
+      display: none;
+    }
+
+    .instaram-container__width-1630__instagram-content__width-1420 a {
+      font-size: 16px;
+      padding: 0 15px;
+    }
+
+    .header-slider-container__width-1630__slider-block__width-1420__btn-with-dots .dots-container {
+      display: none;
     }
   }
 
@@ -996,6 +1195,19 @@
   }
 
   @media screen and (max-width: 590px) {
+
+    .room-slider-container__width-1630__width-1420__content__descr-info, .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__descr-info {
+      padding: 15px;
+      width: 100%;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content__tematic-main {
+      width: 100%;
+    }
+
+    .tematic-photosession-container .tematic-wrapper__width-1630__width-1420__content {
+      display: block;
+    }
 
     .cart-footer {
       display: flex;
@@ -1111,6 +1323,17 @@
   }
 
   @media screen and (max-width: 480px) {
+
+    .tematic-photosession-container .tematic-wrapper {
+      margin-top: 50px;
+      &:first-child {
+        margin-top: 100px;
+      }
+    }
+
+    .photosession-container {
+      margin-top: 30% !important;
+    }
 
     #cart-modal .modal-dialog .modal-content .cart-wrapper .cart-item {
       padding-bottom: 0;
@@ -1479,6 +1702,8 @@
   }
 
   @media screen and (min-width:769px) {
+
+
     .clothes-container__width-1630__clothes-content__clothes-slider .slick-slide {
       min-height: 700px;
     }
