@@ -809,3 +809,4 @@ $('.accordion a').on('click', function() {
         $(this).next().removeClass('active');
     }
 });
+
