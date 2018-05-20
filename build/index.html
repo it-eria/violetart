@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Violet Art</title>
+    <title>Violet Art | Головна</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic"
           rel="stylesheet">
@@ -233,7 +233,7 @@
                 <div class="interior-container__width-1630__center-bg pink"></div>
                 <div class="interior-container__width-1630__interior-content">
                     <div style="display: flex; justify-content: space-between; width: 100%;padding: 0 10px;">
-                        <h2>Інтерєрні зали</h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1700">Інтерєрні зали</h2>
                         <div class="interior-arrows">
                             <div class="left-arrow-interior"><img src="assets/images/left-arrow.png" alt="img"/></div>
                             <div class="right-arrow-interior"><img src="assets/images/right-arrow.png" alt="img"/></div>
@@ -281,7 +281,7 @@
                 <div class="clothes-container__width-1630__center-bg gray"></div>
                 <div class="clothes-container__width-1630__clothes-content">
                     <div style="display: flex; justify-content: space-between; width: 100%; padding: 0 10px;">
-                        <h2>Прокат одягу</h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1700">Прокат одягу</h2>
                         <div class="clothes-container__width-1630__clothes-content__clothes-arrows">
                             <div class="left-arrow-clothes"><img src="assets/images/left-arrow.png" alt="img"/></div>
                             <div class="right-arrow-clothes"><img src="assets/images/right-arrow.png" alt="img"/></div>
@@ -426,7 +426,7 @@
                 <div class="want-container__width-1630__center-bg gray"></div>
                 <div class="want-container__width-1630__want-content">
                     <div style="display: flex; justify-content: space-between; width: 100%;padding: 0 10px;">
-                        <h2>Хочу</h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1700">Хочу</h2>
                         <div class="want-container__width-1630__want-content__want-arrows">
                             <div class="left-arrow-want"><img src="assets/images/left-arrow.png" alt="img"/></div>
                             <div class="right-arrow-want"><img src="assets/images/right-arrow.png" alt="img"/></div>
@@ -484,7 +484,7 @@
                 <div class="blog-container__width-1630__center-bg pink"></div>
                 <div class="blog-container__width-1630__blog-content">
                     <div style="display: flex; justify-content: space-between; width: 100%;padding: 0 10px;">
-                        <h2>Блог</h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1700">Блог</h2>
                         <div class="blog-container__width-1630__blog-content__blog-arrows">
                             <div class="left-arrow-blog"><img src="assets/images/left-arrow.png" alt="img"/></div>
                             <div class="right-arrow-blog"><img src="assets/images/right-arrow.png" alt="img"/></div>
@@ -553,7 +553,7 @@
         </div>
         <div class="advantages-container" data-aos="fade-up" data-aos-offset="250">
             <div class="advantages-container__width-1420">
-                <h2 style="padding: 0 10px;">Переваги</h2>
+                <h2 style="padding: 0 10px;" data-aos="fade-down" data-aos-duration="1700">Переваги</h2>
                 <div class="advantages-container__width-1420__wrapper">
                     <div class="advantages-container__width-1420__wrapper__item">
                         <img src="assets/images/privil-1.png" alt="img"/>
@@ -591,7 +591,7 @@
                 <div class="instaram-container__width-1630__center-bg pink"></div>
                 <div class="instaram-container__width-1630__instagram-content">
                     <div class="instaram-container__width-1630__instagram-content__width-1420">
-                        <h2>Ми в інстаграмі</h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1700">Ми в інстаграмі</h2>
                         <a href="#">instagram.com/violetartstudio/</a>
                         <div class="instaram-container__width-1630__instagram-content__width-1420__instagram-wrapper">
                             <img src="assets/images/insta-1.png" alt="img"/>
@@ -609,7 +609,7 @@
             <div class="contact-form-container__contact-left-bg gray"></div>
             <div class="contact-form-container__contact-right-bg gray"></div>
             <div class="contact-form-container__form">
-                <h2>Написати нам</h2>
+                <h2 data-aos="fade-down" data-aos-duration="1700">Написати нам</h2>
                 <form class="contact-form-container__form__write-to-us">
                     <div class="input-group width-48">
                         <label for="name" id="nameLabel">Ім'я</label>
@@ -700,6 +700,113 @@
         </div>
     </div>
     <script type="text/javascript" src="assets/js/script.min.js"></script>
+
+<script type="text/javascript">
+    $('.header-slider-container__width-1630__slider-block__header-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        autoplay: true,
+        appendDots: $(".dots-container")
+    });
+
+    $('.interior-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 1200,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        autoplay: true
+    });
+
+    $('.clothes-container__width-1630__clothes-content__clothes-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.want-container__width-1630__want-content__want-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.blog-container__width-1630__blog-content__blog-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+</script>
 
 </body>
 </html>

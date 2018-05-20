@@ -362,7 +362,7 @@ p {
       .interior-slider {
         width: 100%;
         .slick-list {
-          z-index: -1;
+          z-index: 1;
           .slick-slide {
             outline: none;
             cursor: pointer;
@@ -3570,16 +3570,22 @@ a[data-toggle='collapse'] {
     + label {
       display: inline;
       position: relative;
+      padding-left: 0;
       &::before {
         display: inline-block;
         width: 24px;
         height: 24px;
         content: ' ';
+        position: relative;
         border: 1px solid #000;
         vertical-align: middle;
         margin-left: 15px;
         cursor: pointer;
         z-index: 10;
+      }
+
+      &::after {
+        position: relative;
       }
     }
     &:checked + label {

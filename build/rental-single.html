@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Violet Art</title>
+    <title>Violet Art | Прокат одягу</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic"
           rel="stylesheet">
@@ -610,7 +610,7 @@
         <div class="mobile-centered-block gray"></div>
         <div class="single-interior-container__width-1420">
             <div class="single-interior-container__width-1420__product-wrapp">
-                <div class="single-interior-container__width-1420__product-wrapp__slider-interior-left">
+                <div class="single-interior-container__width-1420__product-wrapp__slider-interior-left" data-aos="fade-right">
                     <div class="slider slider-for single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main">
                         <div><img src="assets/images/rental-single.jpg" alt="img"/></div>
                         <div><img src="assets/images/rental-single.jpg" alt="img"/></div>
@@ -628,7 +628,7 @@
 
                 </div>
 
-                <div class="single-interior-container__width-1420__product-wrapp__info-interior-right">
+                <div class="single-interior-container__width-1420__product-wrapp__info-interior-right" data-aos="fade-left">
                     <h2>Плаття з драперією рожевого кольору</h2>
                     <span>IZABELLA GARCIA</span>
                     <p>Артикул: <strong>256712</strong></p>
@@ -686,14 +686,14 @@
         </div>
 
 
-        <div class="single-interior-container__recent">
+        <div class="single-interior-container__recent" >
             <div class="single-interior-container__recent__left-bg pink"></div>
             <div class="single-interior-container__recent__right-bg pink"></div>
             <div class="single-interior-container__recent__width-1630">
                 <div class="single-interior-container__recent__width-1630__center-bg pink"></div>
                 <div class="single-interior-container__recent__width-1630__width-1420">
-                    <h2>До цього товару підійде</h2>
-                    <div class="single-interior-container__recent__width-1630__width-1420__item-wrapp">
+                    <h2 data-aos="fade-down" data-aos-duration="1700">До цього товару підійде</h2>
+                    <div class="single-interior-container__recent__width-1630__width-1420__item-wrapp" data-aos="fade-left">
                         <div class="single-interior-container__recent__width-1630__width-1420__item-wrapp__item">
                             <a href="#"><img src="assets/images/recent-1.jpg" alt="img"/></a>
                             <div class="single-interior-container__recent__width-1630__width-1420__item-wrapp__item__item-info">
@@ -786,21 +786,21 @@
     </div>
 
 
-    <div class="clothes-container" data-aos="fade-up" data-aos-offset="250">
+    <div class="clothes-container" >
         <div class="clothes-container__clothes-left-bg gray"></div>
         <div class="clothes-container__clothes-right-bg gray"></div>
         <div class="clothes-container__width-1630">
             <div class="clothes-container__width-1630__center-bg gray"></div>
             <div class="clothes-container__width-1630__clothes-content">
                 <div style="display: flex; justify-content: space-between; width: 100%; padding: 0 10px;">
-                    <h2>Прокат одягу</h2>
+                    <h2 data-aos="fade-down" data-aos-duration="1700">Прокат одягу</h2>
                     <div class="clothes-container__width-1630__clothes-content__clothes-arrows">
                         <div class="left-arrow-clothes"><img src="assets/images/left-arrow.png" alt="img"/></div>
                         <div class="right-arrow-clothes"><img src="assets/images/right-arrow.png" alt="img"/></div>
                     </div>
                 </div>
 
-                <div class="clothes-container__width-1630__clothes-content__clothes-slider">
+                <div class="clothes-container__width-1630__clothes-content__clothes-slider" data-aos="fade-up" data-aos-offset="250">
                     <div>
                         <img src="assets/images/other-1.jpg" alt="img"/>
                         <div class="clothes-container__width-1630__clothes-content__clothes-slider__clothes-info">
@@ -995,6 +995,75 @@
 
 </div>
 <script type="text/javascript" src="assets/js/script.min.js"></script>
+<script type="text/javascript">
+    $('.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-parent'
+    });
+    $('.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-parent').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.single-interior-container__width-1420__product-wrapp__slider-interior-left__slider-main',
+        dots: false,
+        vertical: true,
+        focusOnSelect: true,
+        verticalSwiping: true,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 591,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    vertical: true,
+                    focusOnSelect: true,
+                    verticalSwiping: true
+                }
+            }
+
+        ]
+
+    });
+    $('.clothes-container__width-1630__clothes-content__clothes-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+
+    });
+</script>
 
 </body>
 </html>

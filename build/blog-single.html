@@ -19,7 +19,8 @@
             <div class="modal-content">
 
                 <div class="header-modal-links">
-                    <a class="register" role="button" data-toggle="modal" data-target="#exampleModal-3">Зареєструватись</a>
+                    <a class="register" role="button" data-toggle="modal"
+                       data-target="#exampleModal-3">Зареєструватись</a>
                     <a class="signin active" role="button" data-toggle="modal" data-target="#exampleModal-2">Увійти</a>
                 </div>
 
@@ -79,7 +80,8 @@
     </div>
 </div>
 <div class="main-container">
-    <div class="nav-down menu-wrapp" style="top: 0; transition: top 0.2s ease-in-out; width: 100%; position: fixed; z-index: 1040;">
+    <div class="nav-down menu-wrapp"
+         style="top: 0; transition: top 0.2s ease-in-out; width: 100%; position: fixed; z-index: 1040;">
         <div class="menu-container ">
             <div class="menu-container__width-1420">
                 <div class="containers">
@@ -96,7 +98,8 @@
                                     alt="Brand"
                                     height="80"/></a>
 
-                            <button id="menu-burger" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#first">
+                            <button id="menu-burger" type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#first">
                                 <span></span>
                             </button>
                         </div>
@@ -127,7 +130,8 @@
                                         <a href="#"><img src="assets/images/insta-icon.png" alt="img"/> </a>
                                     </div>
                                     <ul class="nav-login">
-                                        <li><a role="button" data-toggle="modal" data-target="#exampleModal-3" href="#">ЗАРЕЄСТРУВАТИСЬ</a></li>
+                                        <li><a role="button" data-toggle="modal" data-target="#exampleModal-3" href="#">ЗАРЕЄСТРУВАТИСЬ</a>
+                                        </li>
                                         <li><a role="button" data-toggle="modal" data-target="#exampleModal-2" href="#">УВІЙТИ</a>
                                         </li>
 
@@ -169,9 +173,10 @@
         <div class="blog-container__width-1630">
             <div class="blog-container__width-1630__centered-bg pink"></div>
             <div class="blog-container__width-1630__width-1420">
-                <h2>Блог</h2>
-                <div class="reverse-blog-items-single" style="display: flex; justify-content: space-between; align-items: flex-start;">
-                    <div class="blog-container__width-1630__width-1420__sidebar-left">
+                <h2 data-aos="fade-down" data-aos-duration="1700">Блог</h2>
+                <div class="reverse-blog-items-single"
+                     style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div class="blog-container__width-1630__width-1420__sidebar-left" data-aos="fade-right">
                         <div class="blog-container__width-1630__width-1420__sidebar-left__sidebar-item">
                             <div class="blog-container__width-1630__width-1420__sidebar-left__sidebar-item__category-item">
                                 <h3>Рубрики</h3>
@@ -228,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-container__width-1630__width-1420__content">
+                    <div class="blog-container__width-1630__width-1420__content" data-aos="zoom-in">
                         <div class="blog-container__width-1630__width-1420__content__blog-single">
                             <h2>Кращі події березня по версії Violet Art</h2>
                             <p>В этом году институт цвета Pantone определил красный главным цветом сезона, а также
@@ -294,22 +299,22 @@
 
                             <div class="post-blog-nav">
                                 <div class="prev-post">
-                                    <a href="#"><img src="assets/images/left-arrow.png" alt="img"/> Попередня стаття </a>
+                                    <a href="#"><img src="assets/images/left-arrow.png" alt="img"/> Попередня стаття
+                                    </a>
                                 </div>
                                 <div class="next-post">
-                                    <a href="#"> Наступна стаття <img src="assets/images/right-arrow.png" alt="img"/></a>
+                                    <a href="#"> Наступна стаття <img src="assets/images/right-arrow.png"
+                                                                      alt="img"/></a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
-</div>
+
 
 <div class="gmap-container mtop-170">
     <iframe class="gmap-style"
@@ -364,17 +369,17 @@
 
 <div class="mobile-nav-bottom">
     <div class="mobile-nav-bottom__item">
-        <a href="#"><img src="assets/images/call-fixed-footer.png" alt="img" /></a>
+        <a href="#"><img src="assets/images/call-fixed-footer.png" alt="img"/></a>
         <p>Зателефонувати</p>
     </div>
 
     <div class="mobile-nav-bottom__item">
-        <a href="#"><img src="assets/images/want-fixed-footer.png" alt="img" /></a>
+        <a href="#"><img src="assets/images/want-fixed-footer.png" alt="img"/></a>
         <p>ХОЧУ</p>
     </div>
 
     <div class="mobile-nav-bottom__item">
-        <a href="#"><img src="assets/images/rent-fixed-footer.png" alt="img" /></a>
+        <a href="#"><img src="assets/images/rent-fixed-footer.png" alt="img"/></a>
         <p>Бронювання</p>
     </div>
 </div>
@@ -382,6 +387,25 @@
 </div>
 
 <script type="text/javascript" src="assets/js/script.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.blog-single-slider').slick({
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false
+                    }
+                }
+            ]
+        });
+    });
+</script>
 
 </body>
 </html>
