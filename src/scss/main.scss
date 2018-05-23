@@ -2,6 +2,7 @@
 @import "vendor/slick/slick";
 @import "vendor/slick/slick-theme";
 @import "vendor/aos/aos";
+//@import "vendor/animate/animate";
 @import "parts/fonts";
 
 body {
@@ -27,7 +28,11 @@ p {
 }
 
 .menu-container {
-  background-color: #dce9f2;
+  background: #f7f6f8;
+  background: -moz-linear-gradient(left, #f7f6f8 0%, #7d7a90 43%, #7d7a90 61%, #7d7a90 61%, #f7f6f8 100%);
+  background: -webkit-linear-gradient(left, #f7f6f8 0%,#7d7a90 43%,#7d7a90 61%,#7d7a90 61%,#f7f6f8 100%);
+  background: linear-gradient(to right, #f7f6f8 0%,#7d7a90 43%,#7d7a90 61%,#7d7a90 61%,#f7f6f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f8', endColorstr='#f7f6f8',GradientType=1 );
   height: auto;
   display: flex;
 
@@ -41,10 +46,7 @@ p {
     .containers {
       .nav-second {
         background-color: transparent;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-
+        border: 0;
         border-radius: 0;
         min-height: auto;
         position: relative;
@@ -177,6 +179,7 @@ p {
       -ms-flex-pack: center;
       margin-bottom: 0;
       padding: 20px 0;
+      align-items: center;
       justify-content: center;
       li {
         list-style: none;
@@ -186,11 +189,12 @@ p {
           text-transform: uppercase;
           transition: all .2s ease-in-out;
           color: #000;
+
           padding: 0 20px;
           &:hover {
             border-bottom: 3px solid #9eaae3;
             text-decoration: none;
-            padding-bottom: 20px;
+            padding-bottom: 22px;
             color: #9eaae3;
             font-weight: 500;
           }
@@ -243,13 +247,14 @@ p {
             background-color: #8892c3;
             color: #fff;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 21px;
             letter-spacing: 3px;
             padding: 10px 50px;
             cursor: pointer;
             text-decoration: none;
+            text-shadow: 2px 1px 1px #000;
             -webkit-box-shadow: 5px 0 10px #ccc;
-            box-shadow: 0 5px 10px #908b8b;
+            box-shadow: 2px 2px 17px #000;
             max-width: 220px;
             text-align: center;
           }
@@ -968,7 +973,7 @@ p {
 
         a {
           color: #1d2126;
-          font-size: 40px;
+          font-size: 24px;
           font-family: 'MuseoSansRegular';
           text-decoration: none;
           font-weight: 100;
@@ -1791,13 +1796,17 @@ p {
 
 #menu-burger {
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  padding: 10px 23px 16px 0;
+}
+
+.navbar-toggle {
+  margin-right: 0;
 }
 
 #menu-burger span, #menu-burger span:before, #menu-burger span:after {
   cursor: pointer;
   height: 2px;
-  width: 35px;
+  width: 23px;
   background: #000;
   position: absolute;
   display: block;
@@ -4032,6 +4041,266 @@ a[data-toggle='collapse'] {
 
 .desctop-cart-title-item {
   display: block;
+}
+
+
+
+//body,html{
+//  height:100%;
+//  width:100%;
+//  margin:0px;
+//  padding:0px;
+//  background:#fff;
+//}
+
+//div#loader{
+//  position:absolute;
+//  top:calc(50% - 12px);
+//  width:100%;
+//  text-align:center;
+//}
+//
+//div#loader > span{
+//  font-family:'MuseoSansBold';
+//  font-size:38px;
+//  display:inline-block;
+//  transform:scale(1.5);
+//  letter-spacing:10px;
+//  animation:spin 02s linear infinite;
+//  transition:all 0.3s ease;
+//  opacity:1;
+//  color: #8892c3;
+//}
+//
+//div#loader.clear{
+//  opacity:0;
+//}
+//
+//div#loader > span:nth-child(2){
+//  animation-delay:0.1s;
+//}
+//
+//div#loader > span:nth-child(3){
+//  animation-delay:0.2s;
+//}
+//
+//div#loader > span:nth-child(4){
+//  animation-delay:0.3s;
+//}
+//
+//div#loader > span:nth-child(5){
+//  animation-delay:0.4s;
+//}
+//
+//div#loader > span:nth-child(6){
+//  animation-delay:0.5s;
+//}
+//
+//div#loader > span:nth-child(7){
+//  animation-delay:0.6s;
+//}
+//
+//div#loader > span:nth-child(8){
+//  animation-delay:0.7s;
+//}
+//
+//div#loader > span:nth-child(9){
+//  animation-delay:0.8s;
+//}
+//
+//
+//@keyframes spin{
+//  50%{
+//    transform:scaleY(1);
+//    opacity:0;
+//  }
+//}
+//
+//.unfold-box {
+//  background: #dce9f2;
+//
+//  -webkit-transition: all 1s cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+//  -webkit-transition: all 1s cubic-bezier(0.680, -2.550, 0.265, 3.550);
+//  -moz-transition: all 1s cubic-bezier(0.680, -2.550, 0.265, 3.550);
+//  -o-transition: all 1s cubic-bezier(0.680, -2.550, 0.265, 3.550);
+//  transition: all 1s cubic-bezier(0.680, -2.550, 0.265, 3.550); /* easeInOutBack */
+//  box-sizing: border-box;
+//  transform: scale(1);
+//  opacity: 1;
+//  display: inline-block;
+//  float: left;
+//}
+//
+//#unfold-block {
+//  height: 100%;
+//  width: 100vw;
+//  position: absolute;
+//  top: 0px;
+//  left: 0px;
+//  transition: all 0.5s ease;
+//}
+//
+//.unfold-box.clear {
+//  transform: scale(0);
+//  opacity: 0;
+//}
+//
+//#unfold-block.clear {
+//  background: transparent;
+//}
+//.something {
+//  position: fixed;
+//
+//
+//
+//  width: 100%;
+//  height: 100%;
+//  bottom: 0;
+//
+//}
+
+//
+//
+//@keyframes spin-icon {
+//  100% {
+//    background-position: -44px 0;
+//  }
+//}
+//@keyframes float-icon {
+//  100% {
+//    transform: translateY(-10px);
+//  }
+//}
+//@keyframes float-icon-shadow {
+//  100% {
+//    transform: scale(0.85, 0.85) translateY(10px);
+//  }
+//}
+//
+//$easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+//
+//.icon {
+//  width: 60px;
+//  height: 60px;
+//  margin: auto;
+//  background: #1F0711 url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjJweCIgaGVpZ2h0PSI2cHgiIHZpZXdCb3g9IjAgMCAyMiA2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyMiA2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTEuMDExLDYgMCwwLjk3IDAuMDExLDAgMTEuMDExLDUuMDI1IDIyLjAxMSwwIDIyLDAuOTggCSIvPg0KPC9nPg0KPC9zdmc+DQo=");
+//  border-radius: 50%;
+//  position: absolute;
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  animation: spin-icon 2s $easeInOutBack infinite,
+//  float-icon 1s $easeInOutBack infinite alternate;
+//
+//  &::before {
+//    content: '';
+//    width: 50px;
+//    height: 10px;
+//    margin-left: -25px;
+//    background: rgba(0, 0, 0, 0.25);
+//    border-radius: 50%;
+//    position: absolute;
+//    bottom: -25px;
+//    left: 50%;
+//    animation: float-icon-shadow 1s $easeInOutBack infinite alternate;
+//  }
+//}
+
+.main-menu-container__width-1420__desctop-show li {
+  &:last-child {
+
+    a {
+      padding: 0 0 22px;
+      outline: none;
+    }
+  }
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+//
+//@keyframes shake {
+//  80% {transform: scale(1);}
+//  90% {transform: scale(1.1);}
+//  100% {transform: scale(1);}
+//}
+//.shake {
+//  animation-name: shake;
+//  animation-duration: 4s;
+//}
+//
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  80%,
+  84%,
+  88%,
+  92%,
+  96% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  82%,
+  86%,
+  90%,
+  94% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  80%,
+  84%,
+  88%,
+  92%,
+  96% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  82%,
+  86%,
+  90%,
+  94% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  animation-duration: 4s;
+}
+
+.homesession-width {
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 
